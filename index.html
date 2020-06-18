@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <title>Pasteleria</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+</head>
+<body>
+     <!--JUMBOTRON-->
+             
+     <div class="jumbotron jumbotron-fluid" style="background-color:#aff1ee; text-align: center;">
+        <div class="container">
+          <h1  class="display-4">PASTELERIA</h1>
+          <p class="lead">Domingo Zambrano</p>
+        </div>
+</div>
+  <!--Barra nav-->
+<nav class="navbar navbar-expand-lg navbar-light bg-light pt-0 mt-0 mb-2 pb-2">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <!--Cliente-->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" type="button" id="navbarDropdown" role="button"
+                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     Clientes
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                     <a class="dropdown-item" type="button" onclick='mostrar("#formCliente")'>Añadir</a>
+                     <div class="dropdown-divider"></div>
+                     <a class="dropdown-item" type="button" id="listadoCliente"
+                          >Listado</a>
+                </div>
+           </li>
+           <!--Empleado-->
+           <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" type="button" id="navbarDropdown" role="button"
+                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                 Empleados
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                 <a class="dropdown-item" type="button" onclick='mostrar("#formEmpleado")'>Añadir</a>
+                 <div class="dropdown-divider"></div>
+                 <a class="dropdown-item" type="button" id="listadoEmpleado"
+                      >Listado</a>
+            </div>
+          </li>
+         
+           <!--Pasteles-->
+          <li class="nav-item dropdown">
+           <a class="nav-link dropdown-toggle" type="button" id="navbarDropdown" role="button"
+             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Pasteles
+              </a>
+             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" type="button" onclick='mostrar("#formPasteles")'>Añadir</a>
+              <div class="dropdown-divider"></div>
+               <a class="dropdown-item" type="button" id="listadoPasteles"
+               >Listado</a>
+              </div>
+         </li>
+
+         <!--Pedidos-->
+         <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" type="button" id="navbarDropdown" role="button"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+             Pedidos
+             </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+             <a class="dropdown-item" type="button" onclick='mostrar("#formPedido")'>Añadir</a>
+             <div class="dropdown-divider"></div>
+              <a class="dropdown-item" type="button" id="listadoPedidos"
+              >Listado</a>
+             </div>
+        </li>
+
+        <!--Establecimiento-->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" type="button" id="navbarDropdown" role="button"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+             Establecimientos
+             </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+             <a class="dropdown-item" type="button" onclick='mostrar("#formEstablecimiento")'>Añadir</a>
+             <div class="dropdown-divider"></div>
+              <a class="dropdown-item" type="button" id="listadoEstablecimiento"
+              >Listado</a>
+             </div>
+        </li>
+          
+
+
+
+        </ul>    
+    </div>    
+
+</nav>  
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+crossorigin="anonymous"></script>
+
+<div name="formularios" id="formularios" class="container col-8"></div>
+
+<script src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/codigo.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+
+
+
+</body>
